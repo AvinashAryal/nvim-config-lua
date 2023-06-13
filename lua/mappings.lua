@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.cmd("nnoremap <silent> <leader>e <cmd>NvimTreeToggle<cr>")
+vim.cmd("inoremap <C-BS> <C-W>")
 vim.cmd("nnoremap H :bprevious<CR>")
 vim.cmd("nnoremap L :bnext<CR>")
 vim.cmd("nnoremap D :bdelete<CR>")

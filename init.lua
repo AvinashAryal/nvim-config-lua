@@ -25,3 +25,5 @@ vim.cmd("set completeopt=menuone,noselect")
 vim.cmd("filetype plugin indent on")
 vim.cmd("autocmd FileType * set formatoptions-=cro")
 vim.cmd("colorscheme ayu")
+
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]

@@ -70,8 +70,8 @@ return require('packer').startup(function(use)
             require 'alpha'.setup(require 'alpha.themes.startify'.config)
         end
     }
-
+    use 'lervag/vimtex'
     use('neovim/nvim-lspconfig')
     use('jose-elias-alvarez/null-ls.nvim')
-    use('MunifTanjim/prettier.nvim')
+    use('mhartington/formatter.nvim')
 end)
